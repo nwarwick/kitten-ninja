@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
@@ -18,9 +17,9 @@ public class ObjectSpawner : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Spawning object");
             yield return new WaitForSeconds(spawnDelay);
-            GameObject newObject = Instantiate(item, spawnPoint.position, spawnPoint.rotation);
+            Debug.Log("Spawning object");
+            Instantiate(item, spawnPoint.position, spawnPoint.rotation);
         }
     }
 

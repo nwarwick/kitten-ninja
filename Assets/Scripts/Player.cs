@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     public PlayerStats playerStats = new PlayerStats();
     public GameManager gm;
-	public float fallBoundary = -20;
+	public float fallBoundary = -10;
 
     void Start()
     {

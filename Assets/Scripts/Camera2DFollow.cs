@@ -11,7 +11,7 @@ namespace UnityStandardAssets._2D
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
 
-        public float yPosBound = -1; // Added
+        public float yPosBound = -1; // How far down the camera can track the player
 
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
@@ -60,7 +60,7 @@ namespace UnityStandardAssets._2D
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 
             //ADDED CODE 
-            newPos = new Vector3(newPos.x, Mathf.Clamp(newPos.y, -1f, Mathf.Infinity), newPos.z);
+            newPos = new Vector3(newPos.x, Mathf.Clamp(newPos.y, yPosBound, Mathf.Infinity), newPos.z); // Contrains the camera to a set y value
 
             transform.position = newPos;
 
