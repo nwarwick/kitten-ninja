@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject gameOverScreen;
+    [SerializeField]
+    private GameObject victoryScreen;
 
     void Start()
     {
@@ -46,5 +48,12 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("GAME OVER");
         gameOverScreen.SetActive(true);
+    }
+
+    public void Win(Player player)
+    {
+        Debug.Log("Victory!");
+		victoryScreen.SetActive(true);
+        Destroy(player.GetComponent<GameObject>());
     }
 }
