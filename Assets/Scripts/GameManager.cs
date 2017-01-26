@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         newPlayer.name = "Player";
     }
 
-    public  void GameOver()
+    public void GameOver()
     {
         Debug.Log("GAME OVER");
         gameOverScreen.SetActive(true);
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     public void Win(Player player)
     {
         Debug.Log("Victory!");
-		victoryScreen.SetActive(true);
-        Destroy(player.GetComponent<GameObject>());
+        victoryScreen.SetActive(true);
+        Destroy(player.gameObject);
     }
 }

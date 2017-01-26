@@ -18,7 +18,7 @@ public class Win : MonoBehaviour {
 		Player player = other.gameObject.GetComponent<Player>();
 		if (player != null)
 		{
-			gm.Win(other.gameObject);
+			gm.Win(player); // Pass the player because we have to destroy the game object
 		}
 	}
 }
