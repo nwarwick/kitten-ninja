@@ -37,7 +37,8 @@ public class Player : MonoBehaviour
 
         if (playerStats.health <= 0)
         {
-            gm.KillPlayer(this);
+            gm.KillPlayer(this.gameObject);
         }
     }
+
 }

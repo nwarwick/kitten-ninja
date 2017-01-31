@@ -21,9 +21,9 @@ public class GameManager : MonoBehaviour
     }
 
     // Could also just pass the player gameobject
-    public void KillPlayer(Player player)
+    public void KillPlayer(GameObject player)
     {
-        Destroy(player.gameObject);
+        Destroy(player);
         playerLives -= 1f;
         uiLifeCount.text = "Lives: " + playerLives.ToString();
 
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
+        Debug.Log("Respawning player..");
         var newPlayer = Instantiate(playerPrefab, playerSpawnPoint.position, playerSpawnPoint.rotation);
         newPlayer.name = "Player";
     }
