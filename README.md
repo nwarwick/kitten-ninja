@@ -1,4 +1,4 @@
-# kitten-ninja
+# Kitten Ninja
 A game involving a ninja who happens to be a kitten.
 
 # What has been implemented
