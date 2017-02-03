@@ -5,6 +5,11 @@ using UnityEngine;
 public class KillOnContact : MonoBehaviour {
 	GameManager gm;
 
+    // Handle camera shaking
+    public float shakeAmt = 0.1f;
+    public float shakeLen = 0.2f;
+
+    CameraShake camShake;
 
 	void Start()
 	{
@@ -12,13 +17,20 @@ public class KillOnContact : MonoBehaviour {
         {
             gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
+
+        camShake = gm.GetComponent<CameraShake>();
+
+        if(camShake == null)
+        {
+            Debug.LogError("No camera shake script found");
+        }
 	}
 
 	// Check if player hit a hazard
 	void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.gameObject.tag);
         if(other.gameObject.tag == "Hazard"){
+            camShake.Shake(shakeAmt, shakeLen);
 			gm.KillPlayer(gameObject);
         }
     }

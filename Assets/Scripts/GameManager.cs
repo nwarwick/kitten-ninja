@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,10 +24,20 @@ public class GameManager : MonoBehaviour
     // Could also just pass the player gameobject
     public void KillPlayer(GameObject player)
     {
-        Destroy(player);
         playerLives -= 1f;
         uiLifeCount.text = "Lives: " + playerLives.ToString();
 
+        
+         StartCoroutine(DyingAnimation(player));
+
+        
+    }
+
+    IEnumerator DyingAnimation(GameObject player)
+    {
+        Destroy(player);
+        // Play animation here
+        yield return new WaitForSeconds(1f);  
         // Check if player is out of lives and either end game or respawn the player
         if (playerLives <= 0)
         {
@@ -35,7 +46,8 @@ public class GameManager : MonoBehaviour
         else
         {
             RespawnPlayer();
-        }
+        }  
+                
     }
 
     public void RespawnPlayer()

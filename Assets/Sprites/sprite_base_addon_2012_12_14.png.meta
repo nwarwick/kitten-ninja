@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 46d8695104d2348f69ddbdf4a9469aaf
-timeCreated: 1484352014
+timeCreated: 1485892249
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -100,10 +100,10 @@ TextureImporter:
     21300186: sprite_base_addon_2012_12_14_93
     21300188: sprite_base_addon_2012_12_14_94
     21300190: sprite_base_addon_2012_12_14_95
-    21300192: sprite_base_addon_2012_12_14_96
-    21300194: sprite_base_addon_2012_12_14_97
-    21300196: sprite_base_addon_2012_12_14_98
-    21300198: sprite_base_addon_2012_12_14_99
+    21300192: death1
+    21300194: death2
+    21300196: death3
+    21300198: death4
     21300200: sprite_base_addon_2012_12_14_100
     21300202: sprite_base_addon_2012_12_14_101
     21300204: sprite_base_addon_2012_12_14_102
@@ -121,8 +121,8 @@ TextureImporter:
     21300228: sprite_base_addon_2012_12_14_114
     21300230: sprite_base_addon_2012_12_14_115
     21300232: sprite_base_addon_2012_12_14_116
-    21300234: sprite_base_addon_2012_12_14_117
-    21300236: sprite_base_addon_2012_12_14_118
+    21300234: death5
+    21300236: death6
     21300238: sprite_base_addon_2012_12_14_119
     21300240: sprite_base_addon_2012_12_14_120
     21300242: sprite_base_addon_2012_12_14_121
@@ -1703,7 +1703,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_base_addon_2012_12_14_96
+      name: death1
       rect:
         serializedVersion: 2
         x: 21
@@ -1716,7 +1716,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_base_addon_2012_12_14_97
+      name: death2
       rect:
         serializedVersion: 2
         x: 85
@@ -1729,7 +1729,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_base_addon_2012_12_14_98
+      name: death3
       rect:
         serializedVersion: 2
         x: 148
@@ -1742,7 +1742,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_base_addon_2012_12_14_99
+      name: death4
       rect:
         serializedVersion: 2
         x: 205
@@ -1976,7 +1976,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_base_addon_2012_12_14_117
+      name: death5
       rect:
         serializedVersion: 2
         x: 268
@@ -1989,7 +1989,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_base_addon_2012_12_14_118
+      name: death6
       rect:
         serializedVersion: 2
         x: 332

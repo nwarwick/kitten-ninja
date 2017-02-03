@@ -8,3 +8,4 @@ A game involving a ninja who happens to be a kitten.
 * Main Menu
 * Animations for moving, jumping, and idle
 * Lives tracker
+* Screen shake on death
