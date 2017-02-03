@@ -32,4 +32,5 @@ sysinfo.txt
 *.unitypackage
 
 # Misc
-VSCode/
+.vscode
+Asssets/VSCode/
