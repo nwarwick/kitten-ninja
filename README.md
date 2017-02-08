@@ -1,11 +1,11 @@
 # Kitten Ninja
 A game involving a ninja who happens to be a kitten.
 
-# What has been implemented
+# Features
 * Character movement and jumping
 * Rolling level hazards with collision effects
 * Win/Lose condition
-* Main Menu
+* Main Menu systen
 * Animations for moving, jumping, and idle
 * Lives tracker
 * Screen shake on death
