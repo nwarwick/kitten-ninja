@@ -1,5 +1,5 @@
 # Kitten Ninja
-A game involving a ninja who happens to be a kitten.
+A 2D game involving a ninja who happens to be a kitten.
 
 # Features
 * Character movement and jumping
